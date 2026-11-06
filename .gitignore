@@ -1,0 +1,48 @@
+# Variáveis de ambiente e credenciais
+.env
+.env.*
+!.env.example
+
+# Ambiente virtual Python
+.venv/
+venv/
+env/
+
+# Cache e arquivos compilados Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Sessão e autenticação WhatsApp
+sessao_whatsapp.db
+sessao_whatsapp.db-*
+*.db-journal
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Outros arquivos de sessão
+*.session
+*.session-journal
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Distribuição Python
+build/
+dist/
+*.egg-info/
