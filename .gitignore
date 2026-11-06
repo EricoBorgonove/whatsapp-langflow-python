@@ -1,29 +1,39 @@
-# Variáveis de ambiente e credenciais
+
+# ==========================================
+# WHATSAPP + PYTHON + LANGFLOW + OLLAMA
+# ==========================================
+
+# Variaveis de ambiente e credenciais
 .env
 .env.*
 !.env.example
 
-# Ambiente virtual Python
+# Ambientes virtuais
 .venv/
 venv/
 env/
 
-# Cache e arquivos compilados Python
+# Cache Python
 __pycache__/
 *.py[cod]
-*$py.class
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 
-# Sessão e autenticação WhatsApp
+# Banco de autenticacao WhatsApp
 sessao_whatsapp.db
 sessao_whatsapp.db-*
-*.db-journal
-.wwebjs_auth/
-.wwebjs_cache/
 
-# Outros arquivos de sessão
+# Banco de usuarios e boas-vindas
+usuarios_bot.db
+usuarios_bot.db-*
+
+# Outros arquivos temporarios SQLite
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Sessoes adicionais
 *.session
 *.session-journal
 
@@ -31,18 +41,19 @@ sessao_whatsapp.db-*
 *.log
 logs/
 
-# Arquivos temporários
-*.tmp
-*.bak
-*.swp
-.DS_Store
-Thumbs.db
-
-# IDEs
+# Editores
 .vscode/
 .idea/
 
-# Distribuição Python
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporarios
+*.tmp
+*.bak
+
+# Distribuicao Python
 build/
 dist/
 *.egg-info/
